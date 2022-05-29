@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Buttons : MonoBehaviour
+public class EndButtons : MonoBehaviour
 {
     public GameObject fence;
     public GameObject button;
@@ -24,6 +24,15 @@ public class Buttons : MonoBehaviour
         if(other.gameObject.CompareTag(button.tag))
         {
             fence.SetActive(false);
+            switch(button.tag)
+             {
+                case "GreenButton":
+                    FollowTrackerPhysics.GreenFenceActive = false;
+                    break;
+                case "RedButton":
+                    FollowTrackerPhysics.RedFenceActive = false;
+                    break;
+             }
 
         }
     }
