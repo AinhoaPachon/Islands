@@ -3844,7 +3844,7 @@ PrefabInstance:
     - target: {fileID: 5261076004293080658, guid: a2aaaa094093a294aade9f5a5ce62bbb,
         type: 3}
       propertyPath: MarkerID
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5922887162327434483, guid: a2aaaa094093a294aade9f5a5ce62bbb,
         type: 3}
